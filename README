@@ -1,0 +1,15 @@
+This is Domenick De Luca's personal recreation of Minesweeper as a Command Line Interface (CLI) program in the Java programming language.
+
+It was created in the fall of 2017, partly out of experimentation and partly out of boredom. 
+
+The comments in the code and the instructions in the program should be sufficient to understand how it works.
+
+Bugs:
+* It is possible to lose on the first choice because the bombs are generated prior to the first input from the user. This is not the case in standard
+	Minesweeper; you cannot lose on the first click. A simple fix to this would be to generate the bombs after the first user input.
+
+* Using the 16x16 size produces a small graphical error because of the way the GUI is printed out; the numbers of the rows/columns larger than 10
+	use an extra character, so everything is offset a bit.
+
+Planned features:
+* Choose your own size of board. Framework is in place, but not implemented yet.
